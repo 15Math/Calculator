@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc.js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+</head>
+    <body>
+
+    <main id="container" data-theme="light">         
+
+        <header>
+            <h1>Calc.Js</h1>
+            <div id="switch-div">
+                <input type="checkbox" name="switch-theme" id="switch-theme">
+            </div>
+         </header>
+
+        <div id="calc-box">
+                <input type="text" id="calc-input">
+        </div>      
+
+        <section class="calculator">
+
+                <div>
+                    <button class="key" id="clearBtn">C</button>
+                </div>
+                <div>
+                    <button class="charKey key" data-value = "(">(</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = ")">)</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = " / ">/</button>
+                </div>
+         
+                
+                <div>
+                    <button class="charKey key" data-value = "7">7</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "8">8</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "9">9</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = " * ">*</button>
+                </div>
+
+
+                <div>
+                    <button class="charKey key" data-value = "4">4</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "5">5</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "6">6</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = " - ">-</button>
+                </div>
+
+
+                <div>
+                    <button class="charKey key" data-value = "1">1</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "2">2</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = "3">3</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = " + ">+</button>
+                </div>
+
+
+                <div>
+                    <button class="charKey key" data-value = "0">0</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = ".">.</button>
+                </div>
+                
+                <div>
+                    <button class="charKey key" data-value = " % ">mod</button>
+                </div>
+                
+                <div>
+                    <button class="key" id="equalBtn">=</button>
+                </div>    
+        
+        </section>
+
+            <div id="result-box">
+                <div id="copy-div">
+                    <p>Copy</p>
+                    <button id="copy-btn" class="key" data-copy="none"></button>
+                </div>
+                <input type="text" disabled id="result-input">
+            </div>
+        </main>
+        <script src="index.js"></script>
+</body>
+</html>
